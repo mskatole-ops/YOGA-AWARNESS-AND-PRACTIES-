@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yogaa Wellness</title>
+  <style>
+    /* === Global Reset === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fffdf7;
+      color: #333;
+    }
+
+    /* === Navbar === */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 8%;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #2e7d32;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2e7d32;
+    }
+
+    .cta {
+      background: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #256527;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 8%;
+      background: linear-gradient(to right, #fffdf7, #e0f2f1);
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      padding-right: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      color: #1b5e20;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      color: #555;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+
+    .hero-text .btn {
+      background: #ff9800;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .hero-text .btn:hover {
+      background: #fb8c00;
+    }
+
+    .hero img {
+      flex: 1;
+      max-width: 480px;
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* === Motivation Section === */
+    .motivation {
+      text-align: center;
+      padding: 80px 8%;
+      background: #f3fdf5;
+    }
+
+    .motivation h2 {
+      font-size: 2.2rem;
+      color: #1b5e20;
+      margin-bottom: 50px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card p {
+      padding: 20px;
+      font-weight: 500;
+      color: #333;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    /* === Footer === */
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        padding: 0;
+      }
+
+      .hero-text h1 {
+        font-size: 2.3rem;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🧘‍♀️ Yogaa</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Practices</a>
+      <a href="#">Retreats</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <a href="#" class="cta">Join Now</a>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Embrace Peace Through Yoga</h1>
+      <p>Find balance, strength, and serenity in every breath. Join our yoga journey to refresh your mind, body, and soul.</p>
+      <a href="#" class="btn">Start Your Journey</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1554344058-6e063b29e4c3?auto=format&fit=crop&w=900&q=60" alt="Yoga Practice">
+  </section>
+
+  <!-- Motivation Section -->
+  <section class="motivation">
+    <h2>Discover the Power of Yoga 🌿</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599447421416-0f5f0b28d5d8?auto=format&fit=crop&w=900&q=60" alt="Yoga pose 1">
+        <p>“Yoga is the journey of the self, through the self, to the self.” – Bhagavad Gita</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&w=900&q=60" alt="Yoga pose 2">
+        <p>“Peace comes from within. Do not seek it without.” – Buddha</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?auto=format&fit=crop&w=900&q=60" alt="Yoga pose 3">
+        <p>“The body benefits from movement, and the mind benefits from stillness.”</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588286494517-2b3b55f3b1dc?auto=format&fit=crop&w=900&q=60" alt="Yoga pose 4">
+        <p>“Inhale the future, exhale the past.”</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Yogaa Wellness | Designed with ❤️ for inner peace</p>
+  </footer>
+
+</body>
+</html>
